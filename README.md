@@ -1,6 +1,7 @@
-# uofthacks2023
+# Automatic Course Planner
+Project for UofTHacks X 2023
 
-## Set up
+## Setting up Project
 
 Install the requirements for the backend by first creating a virtual environment in the backend directory:
 

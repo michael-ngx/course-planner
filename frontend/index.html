@@ -9,21 +9,19 @@
 </head>
 
 <body>
-    <div>Get data from a backend</div>
-    
     <div>
-        <label for="data-input">Data to send:</label>
-        <input type="text" id="data-input">
-        <button onclick="sendData()">Send data</button>
+        <h3>Paste your syllabus (text)</h3>
+        <textarea name="message" style="width:50%; height: 70%" id="data-input"></textarea>
+        <button type="button" onclick="sendData()">Send data</button>
     </div>
     <div>
-        <div id="sent-data-container"></div>
+        <div id="translated-schedule"></div>
     </div>
     <hr>
-    <div>
-        <button onclick="getUsers()">Get user data</button>
+    <!-- <div>
+        <button onclick="getUsers()">Get data from site</button>
         <div id="result-container"></div>
-    </div>
+    </div> -->
 </body>
 
 </html>
