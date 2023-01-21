@@ -1,0 +1,202 @@
+ECE216: Signals and Systems
+Winter 2023
+Department of Electrical and Computer Engineering
+University of Toronto
+Course Description and Intended Learning Outcomes
+Fundamental continuous-time and discrete-time signals, definition and properties of systems, lin-earity and time invariance, convolution, impulse response, differential and difference equations, Fourier analysis, sampling and aliasing, applications in communications. In the course laboratory, students will learn to apply the analysis techniques developed in the course using computational tools in MATLAB.
+Prerequisites: ECE212 (Circuit Analysis), MAT188 (Linear Algebra), and MAT290 (Advanced
+Engineering Mathematics).
+Intended Learning Outcomes: Upon completion of ECE216, students should be able to
+(i) identify key differences between continuous-time and discrete-time signals,
+(ii) analyze continuous-time and discrete-time signals in the frequency domain using Fourier series and Fourier transform methods,
+(iii) assess properties of continuous-time and discrete-time systems, including linearity, causality, and time-invariance, and
+(iv) analyze the responses of systems using convolution and frequency-domain methods.
+Instructors
+Instructor Section Email Office Hours
+Prof. J. W. Simpson-Porco* LEC0101 jwsimpson@ece.utoronto.ca GB340, Mon. 1-2
+Dr. S. Akbar LEC0102 sunila.akbar@utoronto.ca PT371, Wed. 1-2
+Prof. R. Adve LEC0103 rsadve@ece.utoronto.ca BA7106, Thurs. 11-12
+* Course coordinator.
+Lectures
+The table below displays the times for lectures. Please consult Timetable Builder for the most
+up-to-date lecture schedule.
+Section Instructor Mon. Tues. Wed. Thurs. Fri.
+LEC0101 Simpson-Porco 2-3 BA1170 1-2 BA1170 — 2-3 BA1170 —
+LEC0102 Akbar 11-12 MS2172 — 11-12 RW117 11-12 MP103 —
+LEC0103 Adve 2-3 BA1180 — 2-3 MB128 2-3 MS2172 —
+Teaching Assistants
+Teaching Assistants Role Email
+Susanna Rumsey Head TA ece216admin@eecg.utoronto.ca
+Javane Rostampoor Tutorial TA ece216tutorialTAs@eecg.utoronto.ca
+Faeze Moradi Kalarde Tutorial TA —
+Saima Ali Tutorial TA —
+Emily Vukovich Tutorial TA —
+Youssef Al Falah Tutorial TA —
+Mohannad Shehadeh Tutorial TA —
+Saber Rahbarfam Lab TA —
+Shiva Akbari Lab TA ece216labTAs@eecg.utoronto.ca
+Tharindu Adikari Mudiyanselage Lab TA —
+Kareem M. A. Attiah Alboraie Lab TA —
+Anthony Ho Lab TA —
+Ali Parchekani Lab TA —
+Liang (Jeffrey) Chen Marking TA —
+SeyedMohammad Mortazavi Marking TA —
+Hussein Ammar Marking TA —
+Milad Soltanzadeh Marking TA —
+Behrad Taghibeyglou Marking TA —
+Adnan Hamida Marking TA —
+Course Website
+The course website is hosted via Quercus. General administrative aspects of the course will be
+communicated via announcements on Quercus. The course website will be available from the first day of class until the final exam is given.
+Communication Policy
+Please place “ECE216” in the subject header of all e-mail correspondence, and use only your
+University of Toronto e-mail account. The list below describes who you should e-mail for a given
+issue.
+•Quercus Issues: If you encounter Quercus access issues, please e-mail the Head TA.
+•Specific Administrative Issues: If you would like to discuss an administrative aspect of
+the course specific to you (e.g., change of tutorial or section, re-grading, conflicts, etc.), please
+begin by sending an e-mail to the Head TA.
+•Personal Issues: If you have a personal issue that requires attention, please contact the
+course coordinator Prof. Simpson-Porco.
+•Technical Questions: Please do not e-mail instructors or TAs with technical questions
+regarding the course material. Instead, please ask questions directly to your instructors and
+TAs during/after lectures, tutorials, labs, as well as during office hours. Be proactive and
+take advantage of these varied opportunities for contact.
+Courseware and Supplementary References
+There is no required textbook. Partially filled course notes are available via the course Quercus.
+Useful supplementary references on signals and systems include:
+•Signal Processing and Linear Systems by B. P. Lathi. Beginner and intermediate level.
+•Signals and Systems by Oppenheim, Willsky, and Nawab. Intermediate level.
+•Fundamentals of Signals & Systems by Boulet. Beginner and intermediate level.
+•Modern Signals and Systems by Kwakernaak and Sivan. Intermediate level.
+•ECE216 Signals and Systems by Prof. Stark Draper (available for download on Quercus).
+Notes used in previous years. Some overlap with current course, but coverage is different.
+•Signals and Systems by Prof. Murray Wonham (available for download on Quercus). Notes
+used in previous years for the Engineering Science version of this course. Some overlap with
+current course, but coverage is different.
+•The Mathematical Theory of Signals and Systems by A. D. Lewis. Very advanced treatment
+(available for download here).
+Detailed Course Outline
+•Fundamentals of continuous-time (CT) and discrete-time (DT) signals; signal properties:
+support, action, energy, amplitude, periodicity
+•Sinusoidal signals, complex numbers, CT and DT complex exponential signals
+•The continuous-time Fourier series (CTFS); CTFS existence, convergence, and properties
+•The discrete-time Fourier series (DTFS) and DTFS properties
+•The continuous-time Fourier transform (CTFT); CTFT existence, properties; the inverse
+CTFT
+•The discrete-time Fourier transform (DTFT); properties of the DTFT
+•Sampling, aliasing, and interpolation: the sampling function; sampling theorem for band-
+limited signals
+•Fundamentals of CT systems: linearity, time-invariance, causality, memory, invertibility, sta-
+bility
+•LTI systems: the impulse response and the convolution integral; combinations of LTI systems;
+differential equations and CT LTI systems
+•Fourier transform analysis of CT LTI systems: frequency response and complex exponential
+inputs
+•Response of a LTI system to a periodic input; filtering in the frequency domain using LTI
+systems
+•Laplace transform analysis of CT LTI systems: response of a causal LTI system to a right-
+sided signal; transfer function; frequency response: steady-state response to harmonic inputs
+•Fundamentals of DT systems: properties; LTI systems: the impulse response and the convo-
+lution sum
+•Finite impulse response (FIR) systems; difference equations and DT LTI systems, Fourier
+transform and Laplace transform analysis of DT LTI systems
+Tutorials
+The table below displays the times for tutorials. Please consult Timetable Builder for the most
+up-to-date tutorial schedule. Note: There will be no tutorials in Week 1.
+Section Mon. Tues. Wed. Thurs. Fri.
+TUT0101 — — 1-3, GB304 — —
+TUT0102 — — 1-3, GB220 — —
+TUT0103 — — 4-6, AB107 — —
+TUT0104 — — — — 1-3, HA403
+TUT0105 — — 10-12, AB107 — —
+TUT0106 — — — — 9-11, BA1210
+Homework
+There will be 10 homework sets assigned for practice. Homework problems are posted on the
+Quercus course website with solutions. The homework is good preparation and allows you to keep
+on top of the material covered. Homework will not be collected or graded. The midterms and
+final will assume that you have completed and understood all assigned homework problems. Extra
+practice problems can be found in the previously listed supplementary references.
+Laboratory Information
+There will be three MATLAB-based labs, scheduled on the dates listed below.
+Section Lab 1 Lab 2 Lab 3
+PRA0101 Jan 25, 9-11 March 1, 9-11 March 29, 9-11
+PRA0102 Feb 1, 9-11 March 8, 9-11 April 5, 9-11
+PRA0103 Jan 24, 9-11 Feb 28, 9-11 March 28, 9-11
+PRA0104 Jan 31, 9-11 March 7, 9-11 April 4, 9-11
+PRA0105 Jan 25, 3-5 March 1, 3-5 March 29, 3-5
+PRA0106 Feb 1, 3-5 March 8, 3-5 April 5, 3-5
+The topics of the labs this year are
+•Lab 1: Signal Processing in MATLAB
+•Lab 2: Response of RLC Circuits
+•Lab 3: Music Synthesis
+Lab files are available on the course homepage. The labs must be completed in groups of two;
+one group of three is permitted. You must attend the lab for your given PRA section, and group
+members must be enrolled in the same PRA section. You will join a group by using the group
+self sign-up feature found in Quercus→People in the Quercus course for your PRA section. Please
+sign-up by January 17th, 2023, 11:59pm, or you will be assigned a lab partner. If needed, you may
+e-mail the Head TA for assistance in finding a lab partner. Both group members are expected to
+contribute equally to the lab completion; they will get identical marks, unless special circumstances
+occur.
+Read the lab instructions ahead of time to understand how you must prepare for the day of the
+lab. Labs are completed live on the scheduled day. For each lab, your group must print and bring
+a copy of the answer work sheet. You attend the lab, complete it, and hand in the hard copy of
+your lab sheet to the TA by the end of the scheduled lab time. For general lab questions, please
+begin by contacting the Head TA.
+Late Submission Policy
+We do not accept late submissions. We do not accept submissions via email. This policy is strictly
+enforced. A late submission will receive a mark of 0. If you deem it unavoidable to submit a deliverable after the deadline, you need to contact the Head TA before the deadline, explain the circumstances surrounding the expected delay, and check whether or not they give you permission to submit late. In the absence of such an advance permission, the policy above applies.
+Assessment Dates and Grading Scheme
+Item Allocation Due Date
+Lab 1 5% Week 3 or Week 4 by PRA Section
+Midterm 1 20% Feb 7 2023 6-7:30pm
+Lab 2 5% Week 7 or Week 8 by PRA Section
+Lab 3 5% Week 11 or Week 12 by PRA Section
+Midterm 2 25% Mar 21 2023 6-7:30pm
+Final 40% Date/time/location to be announced on Quercus
+Midterms and Final: There will be two midterms and one final exam.
+Each midterm will be 1.5 hours in length and the final exam is 2.5 hours in length.
+Midterm 1 is held on Tuesday, Feb 7, 6-7:30pm. Location will be announced via Quercus.
+Midterm 2 is held on Tuesday, Mar 21, 6-7:30pm. Location will be announced via Quercus.
+To help in your preparation, during the week preceding each of the two midterms and the final
+exam, there will be several tutorial TA office hours open to students in all sections. Times and
+room location will be announced via the course website. Take full advantage of these sessions to ask directly your questions on the course material. Additionally, take advantage of opportunities to ask questions of instructors during/after the lectures and during their office hours.
+Regrading Policy
+For labs, please contact the Head TA via e-mail with all requests for regrading; your e-mail must
+include your student numbers, PRA section and group numbers, and a clear and concise statement indicating (i) which questions were graded incorrectly and (ii) why your solution deserves a higher grade. Regrade requests will only be accepted within two weeks following the return of an lab assessment, and will take two to three weeks for processing.
+For midterms, you must return the hard-copy of your midterm directly to your instructor, and
+attach to it an additional page containing a clear and concise statement indicating (i) which questions were graded incorrectly and (ii) why your solution deserves a higher grade. Regrade requests will only be accepted within two weeks following the return of a midterm assessment, and will take two to three weeks for processing. By submitting a midterm regrade request, you acknowledge and accept that the indicated questions will be fully regraded, and that this may result in a lower grade than your initial grade.
+Land Acknowledgement
+I (we) wish to acknowledge this land on which the University of Toronto operates. For thousands of years it has been the traditional land of the Huron-Wendat, the Seneca, and most recently, the
+Mississaugas of the Credit River. Today, this meeting place is still the home to many Indigenous
+people from across Turtle Island and we are grateful to have the opportunity to work on this land.
+Inclusivity, Accommodations and Mental Health Support
+Statement on Inclusivity You belong here. The University of Toronto commits to all students,
+faculty and staff that you can learn, work and create in a welcoming, respectful and inclusive
+environment. In this class, we embrace the broadest range of people and encourage their diverse perspectives. This team environment is how we will innovate and improve our collective academic success. You can read the evidence for this approach here.
+We expect each of us to take responsibility for the impact that our language, actions and interactions have on others. Engineering denounces discrimination, harassment and unwelcoming behaviour in all its forms. You have rights under the Ontario Human Rights Code. If you experience or witness any form of harassment or discrimination, including but not limited to, acts of racism, sexism, Islamophobia, anti-Semitism, homophobia, transphobia, ableism and ageism, please tell someone so we can intervene. Engineering takes these reports extremely seriously. You can talk to anyone you feel comfortable approaching, including your professor or TA, an academic advisor, our Assistant Dean, Diversity, Inclusion and Professionalism, the Engineering Equity Diversity and Inclusion
+Action Group, any staff member or a U of T Equity Office.
+You are not alone. Here you can find a list of clubs and groups that support people who identify
+in many diverse ways. Working together, we can all achieve our full potential.
+Statement on Accommodations The University of Toronto supports accommodations for stu-
+dents with diverse learning needs, which may be associated with mental health conditions, learning disabilities, autism spectrum, ADHD, mobility impairments, functional/fine motor impairments, concussion or head injury, blindness and low vision, chronic health conditions, addictions, deafness and hearing loss, communication disorders and/or temporary disabilities, such as fractures and severe sprains, or recovery from an operation.
+If you have a learning need requiring an accommodation the University of Toronto recommends
+that students register as soon as possible with Accessibility Services.
+Phone: 416-978-8060
+Email: accessibility.services@utoronto.ca
+Statement on Mental Health As a university student, you may experience a range of health
+and/or mental health challenges that could result in significant barriers to achieving your personal and academic goals. Please note, the University of Toronto and the Faculty of Applied Science & Engineering offer a wide range of free and confidential services that could assist you during these times.
+As a U of T Engineering student, you have an Academic Advisor (undergraduate students) or a
+Graduate Administrator (graduate students) who can support you by advising on personal matters that impact your academics. Other resources that you may find helpful are listed on the U of T
+Engineering Mental Health & Wellness webpage, and a small selection are also included here:
+•Accessibility Services & the On-Location Advisor
+•Graduate Engineering Council of Students’ Mental Wellness Commission
+•Health & Wellness and the On-Location Health & Wellness Engineering Counsellor
+•Inclusion & Transition Advisor
+•U of T Engineering Learning Strategist and Academic Success
+•My Student Support Program (MySSP)
+•Registrar’s Office
+•SKULE Mental Wellness
+•Scholarships & Financial Aid Office & Advisor
+If you find yourself feeling distressed and in need of more immediate support resources, consider reaching out to the counsellors at My Student Support Program (MySSP) or visiting the Feeling Distressed webpage.
+
