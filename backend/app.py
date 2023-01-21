@@ -13,23 +13,21 @@ def hello():
 @app.route('/users', methods=["GET", "POST"])
 def users():
     print("users endpoint reached...")
-    # if request.method == "GET":
-    #     # Testing server json data
-    #     with open("users.json", "r") as f:
-    #         data = json.load(f)
-    #         data.append({
-    #             "username": "user4",
-    #             "pets": ["hamster"]
-    #         })
-    #         return flask.jsonify(data)
 
     if request.method == "POST":
         received_data = request.get_json()
-        message = received_data['data']     # message = document from user
+        message = received_data['data']     # message = full document from user
 
         ########################
         # Manipulate data 
         ########################
+
+        ## NLP results examples
+        example = {
+            "midterm1" : "3/11/2023",
+            "midterm2" : "....date",
+            "assignment 1" : "asdasdasd",
+        }
         
         return flask.Response(status=201)
 
