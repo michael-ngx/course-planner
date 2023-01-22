@@ -21,13 +21,34 @@ def users():
         ########################
         # Manipulate data 
         ########################
+        
+        import spacy
+        from spacy.matcher import Matcher
+
+        with open ("learning-files/ece216.txt", "r") as f:
+            text = f.read()
+            
+        nlp2 = spacy.load("en_core_web_sm")
+
+        assignment_synonyms = ["labs","midterm","exam","homework","assignment"]
+        matcher = Matcher(nlp2.vocab)
+        pattern = [{"POS":"NOUN","TEXT":{"IN":assignment_synonyms}},
+                {"ENT_TYPE": "DATE", "OP": "+"}]
+        matcher.add("NOUN + DATE",[pattern],greedy="LONGEST")
+
+        doc = nlp2(text)
+        matches = matcher(doc)
+        matches.sort(key = lambda x: x[1])
+
+        for match in matches:
+            print (match, doc[match[1]:match[2]])
 
         ## NLP results examples
-        example = {
-            "midterm1" : "3/11/2023",
-            "midterm2" : "....date",
-            "assignment 1" : "asdasdasd",
-        }
+        # example = {
+        #     "midterm1" : "3/11/2023",
+        #     "midterm2" : "4/24/2023",
+        #     "assignments" : "weekly",
+        # }
         
         return flask.Response(status=201)
 

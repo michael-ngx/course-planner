@@ -14,17 +14,17 @@ Set up Flask environment variables:
 
 Unix Bash (Linux, Mac, etc.):
 ```
-$ export FLASK_APP=hello
+$ export FLASK_APP=app.py
 $ flask run
 ```
 Windows CMD:
 ```
-> set FLASK_APP=hello
+> set FLASK_APP=app.py
 > flask run
 ```
 Windows PowerShell:
 ```
-> $env:FLASK_APP = "hello"
+> $env:FLASK_APP = "app.py"
 > flask run
 ```
 
